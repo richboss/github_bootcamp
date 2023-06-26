@@ -19,6 +19,6 @@ jobs:
     steps:
       - run: |
           echo "icon The job was triggered by event: ${{ github.event_name }}"
-          echo "icon The name of your branch is ${{ github.ref }} and your repository is ${{ github.name }}."
+          echo "icon The name of your branch is ${{ github.ref }} and your repository is ${{ github.event.repository.name }}."
           
           
